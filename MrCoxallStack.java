@@ -26,7 +26,12 @@ public class MrCoxallStack {
     * The Pop() function removes integers from the stack.
     */
     public void pop() {
-        stackAsArray.remove(stackAsArray.size() - 1);
+        if (stackAsArray.size() == 0) {
+            System.out.println("\nYou cannot pop; the array is empty!");
+
+        } else {
+            stackAsArray.remove(stackAsArray.size() - 1);
+        }
     }
 
     /**
